@@ -61,14 +61,6 @@ $(document).ready(function () {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
     $('.scroll-down span').click(function () {
         $('html, body').animate({
             scrollTop: $('.about').offset().top - $('nav').height()
@@ -76,3 +68,10 @@ $(document).ready(function () {
     });
     
 });
+
+
+let bars = document.querySelector('.mobile-menu-btn'),
+    SideBar = document.querySelector('.header ul');
+bars.addEventListener('click',()=>{
+    SideBar.classList.toggle("active");
+})
