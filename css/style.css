@@ -559,10 +559,28 @@ header .scroll-down span {
     .bars {
         display: block;
     }
+
+    .scroll-down {
+        display: none;
+    }
+
+    header .welcome-msg p {
+        font-size: 18px;
+        color: #fff;
+    }
 }
 
 @media(max-width:576px) {
     header .top-bar {
         justify-content: space-around;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    header .welcome-msg p {
+        font-size: 18px;
+        color: #fff;
     }
 }
