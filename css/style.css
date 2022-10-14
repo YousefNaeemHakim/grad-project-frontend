@@ -129,7 +129,7 @@ header .top-bar {
     padding: 8px 0;
 }
 
-.mobile-menu-btn {
+.bars {
     font-size: 32px;
     color: #fff;
     cursor: pointer;
@@ -556,7 +556,7 @@ header .scroll-down span {
     header .top-bar ul.main-links {
         display: none;
     }
-    .mobile-menu-btn {
+    .bars {
         display: block;
     }
 }

@@ -24,7 +24,7 @@ $(document).ready(function () {
     $('.goTop').click(function () {
         $('html, body').animate({
             scrollTop: 0
-        }, 1500);
+        }, 1000);
     });
 
 
@@ -70,8 +70,8 @@ $(document).ready(function () {
 });
 
 
-let bars = document.querySelector('.mobile-menu-btn'),
+let bars = document.querySelector('.bars'),
     SideBar = document.querySelector('.header ul');
-bars.addEventListener('click',()=>{
+    bars.addEventListener('click',()=>{
     SideBar.classList.toggle("active");
 })
