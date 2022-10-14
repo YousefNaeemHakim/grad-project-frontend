@@ -2,7 +2,7 @@
 
 :root {
     --main-color: rgb(17, 131, 207);
-    --hovers-color: rgb(180, 26, 56);
+    --hovers-color: rgb(48, 169, 250);
 }
 
 
@@ -139,7 +139,6 @@ header .top-bar {
 header .logo {
     color: #fff;
     font-size: 24px;
-    text-transform: uppercase;
 }
 
 header .top-bar ul {
