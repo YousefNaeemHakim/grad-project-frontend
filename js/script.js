@@ -28,30 +28,30 @@ $(document).ready(function () {
     });
 
 
-    $(window).scroll(function () {
-        $('.box').each(function () {
-            if ($(window).scrollTop() > $(this).offset().top - $('nav').height() - 1) { // Not Equal
-                var boxId = $(this).attr('id');
-                var lastBoxId = $('.box').last().attr('id');
-                $('nav li').removeClass('active');
-                console.log();
-                if ($(window).scrollTop() >= $('#contact-us').offset().top + 1) {
-                    $('nav li a[data-scroll="' + lastBoxId + '"]').parent().addClass('active');
-                } else {
-                    $('nav li a[data-scroll="' + boxId + '"]').parent().addClass('active');
-                }
-                var lastScroll = $(document).height()  - $(window).height();
-                if($(window).scrollTop() + $(window).height() == $(document).height())  {
-                    $('nav li a[data-scroll="' + lastBoxId + '"]').parent().addClass('active');
-                } else {
-                    console.log('No');
-                }
+    // $(window).scroll(function () {
+    //     $('.box').each(function () {
+    //         if ($(window).scrollTop() > $(this).offset().top - $('nav').height() - 1) { // Not Equal
+    //             var boxId = $(this).attr('id');
+    //             var lastBoxId = $('.box').last().attr('id');
+    //             $('nav li').removeClass('active');
+    //             console.log();
+    //             if ($(window).scrollTop() >= $('#contact-us').offset().top + 1) {
+    //                 $('nav li a[data-scroll="' + lastBoxId + '"]').parent().addClass('active');
+    //             } else {
+    //                 $('nav li a[data-scroll="' + boxId + '"]').parent().addClass('active');
+    //             }
+    //             var lastScroll = $(document).height()  - $(window).height();
+    //             if($(window).scrollTop() + $(window).height() == $(document).height())  {
+    //                 $('nav li a[data-scroll="' + lastBoxId + '"]').parent().addClass('active');
+    //             } else {
+    //                 console.log('No');
+    //             }
             
 
-            }
-        });
+    //         }
+    //     });
 
-    });
+    // });
 
     $('nav li a').click(function () {
         $('html, body').animate({

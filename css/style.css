@@ -65,9 +65,9 @@ input {
     background: rgba(0, 0, 0, .8);
 }
 
-.active {
+/* .active {
     border-bottom: 2px solid rgb(17, 131, 207);
-}
+} */
 
 .goTop {
     position: fixed;
@@ -108,7 +108,7 @@ header {
     background-position: center;
     height: 100vh;
     position: relative;
-    z-index: 0;
+    z-index: 999;
 }
 
 header nav {
@@ -128,7 +128,12 @@ header .top-bar {
     align-items: center;
     padding: 8px 0;
 }
-
+.row img {
+    z-index: -999;
+    background-color: white;
+    outline: rgb(0, 140, 255) solid 4px;
+    outline-offset: 3px;
+}
 .bars {
     font-size: 32px;
     color: #fff;
@@ -540,9 +545,39 @@ header .scroll-down span {
 }
 .footer .footer-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     text-align: center;
     flex-wrap: wrap;
+}
+.footer .sign {
+    margin-left: 150px;
+}
+.footer span {
+    padding-top: 17px;
+}
+.footer .but1 , .footer .but2 {
+    border-radius: 10px;
+    background: rgb(17, 131, 207);
+    border: none;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+}
+.footer a:hover {
+    background-color: #55acee;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.footer.but2 {
+    margin-right: 400px;
+}
+.footer .but1 {
+    margin-right: 50px;
+    margin-left: 200px;
 }
 
 
